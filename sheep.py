@@ -1,11 +1,10 @@
   
 ##built for remove same maximum values
 def samemax(a):
-    a.sort()
     temp=max(a)
-    while a[len(a)-1]==temp:
-        a[len(a)-1]=8
-        a.sort()
+    for i in range(len(a)) :
+        if a[i]==temp:
+            a[i]=8
 #main program
 def sheepnotice(a,n):
     print('begining balance xd gg',a)
